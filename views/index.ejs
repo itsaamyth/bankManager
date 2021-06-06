@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"
+  ></script>
+  <script
+  src="https://kit.fontawesome.com/58b8e1a00a.js"
+  crossorigin="anonymous"
+></script>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-light"
+        style="background-color: #f8f9fa !important"
+      >
+        <a class="navbar-brand" href="/"
+          ><h3 class="navTitle">
+            <img id="icon" src="/images/bank.png" /> Digital Bank
+          </h3></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" href="/"
+              ><h5>Home</h5>
+              <span class="sr-only">(current)</span></a
+            >
+            <a class="nav-link" href="/transactions">
+              <h5>Transaction History</h5></a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container-fluid">
+      <div class="row" id="bsRow">
+        <div class="col-md-6 col-sm-12 col-xs-12">
+          <h1 class="title">Welcome to Digital Banking</h1>
+          <p class="desc">
+            One time stop for transfering money across all places
+          </p>
+          <h4>Have a look at our Digital Features</h4>
+          <div id="featuresrow">
+            <a href="/customers">
+              <div class="card border-0" id="features">
+                <div class="card-body">
+                  <h4>View All Customers <i class="fas fa-arrow-right"></i></h4>
+                </div>
+              </div>
+            </a>
+
+            <a href="/transfer">
+              <div class="card border-0" id="features">
+                <div class="card-body">
+                  <h4>Transfer Money <i class="fas fa-arrow-right"></i></h4>
+                </div>
+              </div>
+            </a>
+
+            <a href="transactions">
+              <div class="card border-0" id="features">
+                <div class="card-body">
+                  <h4>
+                    Transaction History <i class="fas fa-arrow-right"></i>
+                  </h4>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 col-12">
+          <img id="bankBg" src="/images/5349.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
