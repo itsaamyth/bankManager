@@ -58,7 +58,7 @@ router.get('/transactions', function(req, res, next) {
     if(err)throw err
     transactions.find({}).exec((err,transactiondata)=>{
       if(err)throw err
-    res.render('Transactions', { title: 'Transactions' ,profile:profiledata,transaction:transactiondata});
+    res.render('transactions', { title: 'Transactions' ,profile:profiledata,transaction:transactiondata});
   })
 })
 });
