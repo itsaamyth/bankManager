@@ -15,6 +15,7 @@
       crossorigin="anonymous"
     />
     <title><%= title %></title>
+    <link rel="shortcut icon" type="image/png" href="/images/sparks.png"/>
     <link rel="stylesheet" href="/stylesheets/style.css" />
     <script
       src="https://kit.fontawesome.com/58b8e1a00a.js"
@@ -27,10 +28,10 @@
         class="navbar navbar-expand-lg navbar-light"
         style="background-color: #f8f9fa !important"
       >
-        <a class="navbar-brand" href="/"
-          ><h3 class="navTitle">
-            <img id="icon" src="/images/bank.png" /> Digital Bank
-          </h3></a
+      <a class="navbar-brand" href="/"
+      ><h3 class="navTitle">
+        <img id="icon" src="/images/sparks.png" />GRIP Digital Bank
+      </h3></a
         >
         <button
           class="navbar-toggler"
@@ -113,7 +114,7 @@
                         <% if(customer.length >0) {
                             customer.forEach(function(row){
                         %>    
-                         <option value="<%= row.name %> <%= row.accNumber %> " ><%= row.name %> <%= row.accNumber %> </option>
+                         <option value="<%= row.accNumber %> " ><%= row.name %> <%= row.accNumber %> </option>
                         <% }) } %>
                     </select>
 

@@ -15,6 +15,7 @@
       crossorigin="anonymous"
     />
     <title><%= title %></title>
+    <link rel="shortcut icon" type="image/png" href="/images/sparks.png"/>
     <link rel="stylesheet" href="/stylesheets/style.css" />
     <script
       src="https://kit.fontawesome.com/58b8e1a00a.js"
@@ -27,10 +28,10 @@
         class="navbar navbar-expand-lg navbar-light"
         style="background-color: #f8f9fa !important"
       >
-        <a class="navbar-brand" href="/"
-          ><h3 class="navTitle">
-            <img id="icon" src="/images/bank.png" /> Digital Bank
-          </h3></a
+      <a class="navbar-brand" href="/"
+      ><h3 class="navTitle">
+        <img id="icon" src="/images/sparks.png" />GRIP Digital Bank
+      </h3></a
         >
         <button
           class="navbar-toggler"
@@ -117,9 +118,11 @@
                   <div class="card border-0" id="transcard">
                     <div class="card-body">
                       <h3>To Account</h3>
-                      <h6>Account Number : <%= account %></h6>
-                      <h6>Name : <%= account %></h6>
+                      <% customer.forEach(function(row){ %>
+                      <h6>Account Name : <%= row.name %></h6>
+                      <h6>Account Number : <%= row.accNumber %></h6>
                       <h6>Remarks : <%= remarks %></h6>
+                      <% }) %>
                     </div>
                   </div>
                 </div>

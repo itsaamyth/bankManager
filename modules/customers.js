@@ -11,6 +11,10 @@ const customersSchema = new mongoose.Schema({
     email:{
         type:String,
         required:true
+    },
+    balance:{
+        type:Number,
+        required:true
     }
 })
 

@@ -1,7 +1,11 @@
 const mongoose = require('mongoose')
 const transactionSchema = new mongoose.Schema({
-    account:{
+    accountName:{
         type:String,
+        required:true
+    },
+    accountNumber:{
+        type:Number,
         required:true
     },
     amount:{
